@@ -1,0 +1,17 @@
+#%RAML 0.8
+title: loan_XML_REST_API
+version: 1.0
+baseUri: http://localhost/api/v1
+/band:
+  displayName: Band Details
+  post:
+    description: Band details
+    body:
+      application/xml:
+        schema: !include band_inquiry_request_schema.xsd
+    responses:
+      200:
+        body:
+          application/xml:
+            schema: !include band_inquiry_response_schema.xsd
+          
