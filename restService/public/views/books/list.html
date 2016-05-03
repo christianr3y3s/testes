@@ -1,0 +1,11 @@
+<h2>
+	Books <a class="btn btn-primary pull-right" href="#/books/new"><i
+		class="icon-plus-sign icon-white"></i> Submit New Book</a>
+</h2>
+
+<table class="table table-striped">
+	<tr ng-repeat="book in books">
+		<td><a href="#/books/{{book.id}}">{{book.title}}</a></td>
+		<td>{{book.title}}</td>
+	</tr>
+</table>
